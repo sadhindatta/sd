@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SADHIN DATTA | Networking & Security</title>
+    <!-- Google Fonts: Roboto (Corp) & Orbitron (Tech headers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rajdhani:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Early Theme Initialization -->
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            if (savedTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                SADHIN <span class="highlight">DATTA</span>
+            </a>
+            <div class="nav-bottom-row">
+                <div id="digital-clock" class="digital-clock">00:00:00</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#certifications">Certs</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact</a></li>
+                    <li><button id="theme-toggle" class="theme-btn"><i class="fa-regular fa-sun"></i></button></li>
+                </ul>
+            </div>
+            <div class="mobile-toggle"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+        <div class="tech-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="status-badge"><i class="fa-solid fa-circle-check"></i> System Operational</span>
+                <h1>Secure Infrastructure. <br> Seamless Connectivity.</h1>
+                <p>
+                    I am an IT Professional specializing in <strong>Networking</strong>, <strong>Cybersecurity</strong>,
+                    and <strong>Enterprise Support</strong>.
+                    I build and defend the digital backbones that power modern business.
+                </p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn primary-btn"><i class="fa-solid fa-server"></i> View
+                        Architectures</a>
+                    <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- CSS Graphic representing a secure network -->
+                <!-- Tech Globe Animation -->
+                <div class="tech-globe-container">
+                    <div class="globe">
+                        <div class="globe-sphere"></div>
+                        <div class="globe-outer-shadow"></div>
+                        <div class="globe-worldmap">
+                            <div class="globe-ring"></div>
+                            <div class="globe-ring"></div>
+                            <div class="globe-ring"></div>
+                            <div class="globe-ring"></div>
+                            <div class="globe-ring"></div>
+                        </div>
+                    </div>
+                    <div class="orbit-icon icon-1"><i class="fa-solid fa-network-wired"></i></div>
+                    <div class="orbit-icon icon-2"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="orbit-icon icon-3"><i class="fa-solid fa-lock"></i></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="profile.png" alt="Sadhin Datta" class="profile-img">
+                </div>
+                <div class="about-content-wrapper">
+                    <div class="about-text">
+                        <p>
+                            With over 5 years of experience in the IT, I act as the bridge between complex hardware and
+                            business efficiency.
+                            My expertise lies in diagnosing Layer 1-7 issues, configuring enterprise firewalls, and
+                            ensuring
+                            data integrity.
+                        </p>
+                        <ul class="about-list">
+                            <li><i class="fa-solid fa-check"></i> Network Architecture & Implementation</li>
+                            <li><i class="fa-solid fa-check"></i> Threat Detection & Incident Response</li>
+                            <li><i class="fa-solid fa-check"></i> IT Support & System Administration</li>
+                        </ul>
+                    </div>
+                    <div class="about-stat-cards">
+                        <div class="stat-card">
+                            <h3>5+</h3>
+                            <p>Years Exp.</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>50+</h3>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title center">Technical Capabilities</h2>
+            <div class="skills-wrapper">
+
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-network-wired"></i> Networking</h3>
+                    <div class="tags">
+                        <span>Cisco IOS</span>
+                        <span>routing/Switching</span>
+                        <span>VLANs</span>
+                        <span>OSPF/BGP</span>
+                        <span>Wireshark</span>
+                        <span>VPN (IPSec/SSL)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-user-shield"></i> Cybersecurity</h3>
+                    <div class="tags">
+                        <span>Firewalls (Palo Alto/Fortinet)</span>
+                        <span>SIEM</span>
+                        <span>Penetration Testing</span>
+                        <span>Endpoint Protection</span>
+                        <span>Access Control (IAM)</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-server"></i> SysAdmin & Support</h3>
+                    <div class="tags">
+                        <span>Windows Server 2019/2022</span>
+                        <span>Active Directory</span>
+                        <span>Linux (RHEL/Ubuntu)</span>
+                        <span>VMware ESXi</span>
+                        <span>Office 365</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Detailed Progress Skills -->
+            <div class="skills-progress-container">
+                <h3 class="subsection-title">MY SKILLS</h3>
+                <p class="section-intro">Here are my main technical skills and how much did I made progess in them.</p>
+
+                <div class="progress-grid">
+                    <!-- Col 1 -->
+                    <div class="progress-column">
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Routing</span><span class="sb-percent blue">90%</span></div>
+                            <div class="sb-rail">
+                                <div class="sb-fill blue" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Firewalling</span><span class="sb-percent yellow">90%</span>
+                            </div>
+                            <div class="sb-rail">
+                                <div class="sb-fill yellow" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Mail Security</span><span class="sb-percent green">90%</span>
+                            </div>
+                            <div class="sb-rail">
+                                <div class="sb-fill green" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Windows Server</span><span class="sb-percent blue">70%</span>
+                            </div>
+                            <div class="sb-rail">
+                                <div class="sb-fill blue" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Load-Balancer</span><span class="sb-percent blue">70%</span>
+                            </div>
+                            <div class="sb-rail">
+                                <div class="sb-fill blue" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Col 2 -->
+                    <div class="progress-column">
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Switching</span><span class="sb-percent red">80%</span></div>
+                            <div class="sb-rail">
+                                <div class="sb-fill red" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Web Security - Proxy</span><span
+                                    class="sb-percent purple">90%</span></div>
+                            <div class="sb-rail">
+                                <div class="sb-fill purple" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>E-Mail Encryption</span><span
+                                    class="sb-percent indigo">85%</span></div>
+                            <div class="sb-rail">
+                                <div class="sb-fill indigo" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Linux Server</span><span class="sb-percent blue">65%</span></div>
+                            <div class="sb-rail">
+                                <div class="sb-fill blue" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="sb-info"><span>Virtualization</span><span class="sb-percent blue">65%</span>
+                            </div>
+                            <div class="sb-rail">
+                                <div class="sb-fill blue" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications (New Section) -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <h2 class="section-title">Professional Certifications</h2>
+            <div class="certs-grid">
+                <div class="cert-card centered-layout">
+                    <div class="cert-icon image-icon"><img src="mtcipv6e-logo.png" alt="MTCIPv6E Logo"></div>
+                    <div class="cert-info">
+                        <h3>MTCIPv6E</h3>
+                        <p>MikroTik Certified IPv6 Engineer</p>
+                        <span class="cert-id">ID: 0000000000</span>
+                    </div>
+                </div>
+                <div class="cert-card centered-layout">
+                    <div class="cert-icon image-icon"><img src="mtcna-logo.png" alt="MTCNA Logo"></div>
+                    <div class="cert-info">
+                        <h3>MTCNA</h3>
+                        <p>MikroTik Certified Network Associate</p>
+                        <span class="cert-id">ID: 2511NA5342</span>
+                    </div>
+                </div>
+                <div class="cert-card centered-layout">
+                    <div class="cert-icon image-icon"><img src="mtcre-logo.png" alt="MTCRE Logo"></div>
+                    <div class="cert-info">
+                        <h3>MTCRE</h3>
+                        <p>MikroTik Certified Routing Engineer</p>
+                        <span class="cert-id">ID: 2511RE5406</span>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-container">
+                <div class="cert-card centered-layout view-more-card" id="view-more-certs-btn">
+                    <div class="view-more-link">
+                        <div class="cert-icon blue"><i class="fa-solid fa-arrow-right"></i></div>
+                        <h3>View More</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img-placeholder">
+                        <i class="fa-solid fa-building-shield"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure Branch Deployment</h3>
+                        <p>Deployed complete network stack for a new branch office including Firewall, Switches, and
+                            Wireless APs.</p>
+                        <div class="project-tags">
+                            <span>Fortinet</span>
+                            <span>Cisco</span>
+                            <span>Meraki</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-placeholder">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hybrid Cloud Migration</h3>
+                        <p>Migrated on-premise Active Directory and File Servers to Azure utilizing Site-to-Site VPN.
+                        </p>
+                        <div class="project-tags">
+                            <span>Azure</span>
+                            <span>VPN</span>
+                            <span>Powershell</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img-placeholder">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Network Hardening Audit</h3>
+                        <p>Conducted internal audit of switch configurations, implementing port security and 802.1x
+                            auth.</p>
+                        <div class="project-tags">
+                            <span>Security+</span>
+                            <span>Auditing</span>
+                            <span>802.1x</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (July - Present)</div>
+                    <div class="timeline-content">
+                        <h3>Support Engineer (Network Operation Center)</h3>
+                        <h4>One Sky Communications Limited</h4>
+                        <p>Responsible for monitoring network infrastructure, troubleshooting connectivity issues, and
+                            ensuring high uptime for enterprise services.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 (January - June)</div>
+                    <div class="timeline-content">
+                        <h3>Technical Support Engineer</h3>
+                        <h4>One Sky Communications Limited</h4>
+                        <p>Provided advanced technical assistance, resolved complex networking queries, and managed
+                            client infrastructure support.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 (October - December)</div>
+                    <div class="timeline-content">
+                        <h3>Customer Care Executive</h3>
+                        <h4>One Sky Communications Limited</h4>
+                        <p>Delivered customer-centric support for broadband services and handled technical inquiries
+                            efficiently.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 (June - September)</div>
+                    <div class="timeline-content">
+                        <h3>Internship</h3>
+                        <h4>One Sky Communications Limited</h4>
+                        <p>Underwent practical training in ISP operations, network monitoring, and foundational
+                            troubleshooting techniques.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education (New Section) -->
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2026 - Present</div>
+                    <div class="timeline-content">
+                        <h3>BSc in Computer Science & Engineering</h3>
+                        <h4>Uttara University</h4>
+                        <p>Pursuing advanced studies in Software Engineering and Network Architectures.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2021 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Diploma in Computer Science and Technology</h3>
+                        <h4>Barishal Polytechnic Institute</h4>
+                        <p>Specialized in Computer Architecture, Networking Fundamentals, and Software Development.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Year Not Applied</div>
+                    <div class="timeline-content">
+                        <h3>Secondary Schooling</h3>
+                        <h4>Jaldhaka Government Model Pilot High School</h4>
+                        <p>Completed foundational education with a focus on science and core academic disciplines.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title center" style="display: block; width: 100%;">Professional Resume</h2>
+            <div class="resume-content">
+                <!-- Left Side: Photo -->
+                <div class="resume-left">
+                    <div class="resume-photo-container">
+                        <img src="photo.png" alt="Sadhin Datta" class="resume-photo">
+                    </div>
+                </div>
+
+                <!-- Right Side: Stacked Cards -->
+                <div class="resume-right">
+                    <!-- CV Card -->
+                    <div class="resume-card horizontal-card">
+                        <div class="resume-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                        <div class="resume-info">
+                            <h3>Curriculum Vitae</h3>
+                            <p>Detailed technical expertise, project history, and academic background.</p>
+                        </div>
+                        <div class="resume-actions">
+                            <a href="#" class="btn primary-btn"><i class="fa-solid fa-download"></i> Download</a>
+                            <a href="#" class="btn secondary-btn"><i class="fa-solid fa-eye"></i> View</a>
+                        </div>
+                    </div>
+
+                    <!-- Resume Card -->
+                    <div class="resume-card horizontal-card">
+                        <div class="resume-icon"><i class="fa-solid fa-file-lines"></i></div>
+                        <div class="resume-info">
+                            <h3>One-Page Resume</h3>
+                            <p>A concise summary of my professional experience and key skills.</p>
+                        </div>
+                        <div class="resume-actions">
+                            <a href="#" class="btn primary-btn"><i class="fa-solid fa-download"></i> Download</a>
+                            <a href="#" class="btn secondary-btn"><i class="fa-solid fa-eye"></i> View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+        <div class="container small-container">
+            <i class="fa-solid fa-paper-plane contact-icon"></i>
+            <h2>Get In Touch</h2>
+            <p>Looking for a secure network architecture or need IT consultation?</p>
+            <a href="mailto:email@example.com" class="btn primary-btn large-btn">Send Message</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sadhindatta/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/sadhindatta" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://x.com/dattasadhin" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Detail Modal -->
+    <div id="skill-modal" class="skill-modal-overlay">
+        <div class="skill-modal-content">
+            <span class="close-modal close-skill-modal">&times;</span>
+            <div class="skill-modal-body">
+                <div class="modal-label"><span id="modal-skill-name">Skill Name</span></div>
+                <div class="modal-progress-track">
+                    <div id="modal-progress-fill" class="modal-progress-fill"></div>
+                </div>
+                <div id="modal-skill-percent" class="modal-skill-percent">0%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications Modal -->
+    <div id="certs-modal" class="skill-modal-overlay">
+        <div class="skill-modal-content large-modal">
+            <span class="close-modal close-certs-modal">&times;</span>
+            <h2 class="section-title center" style="margin-top: 0; font-size: 1.8rem;">All Certifications</h2>
+            <div class="certs-grid" style="max-height: 60vh; overflow-y: auto; padding-right: 10px;">
+                <!-- Replicating the full list here -->
+                <div class="cert-card centered-layout">
+                    <div class="cert-icon image-icon"><img src="mtcipv6e-logo.png" alt="MTCIPv6E Logo"></div>
+                    <div class="cert-info">
+                        <h3>MTCIPv6E</h3>
+                        <p>MikroTik Certified IPv6 Engineer</p>
+                        <span class="cert-id">ID: 0000000000</span>
+                    </div>
+                </div>
+                <div class="cert-card centered-layout">
+                    <div class="cert-icon image-icon"><img src="mtcna-logo.png" alt="MTCNA Logo"></div>
+                    <div class="cert-info">
+                        <h3>MTCNA</h3>
+                        <p>MikroTik Certified Network Associate</p>
+                        <span class="cert-id">ID: 2511NA5342</span>
+                    </div>
+                </div>
+                <div class="cert-card centered-layout">
+                    <div class="cert-icon image-icon"><img src="mtcre-logo.png" alt="MTCRE Logo"></div>
+                    <div class="cert-info">
+                        <h3>MTCRE</h3>
+                        <p>MikroTik Certified Routing Engineer</p>
+                        <span class="cert-id">ID: 2511RE5406</span>
+                    </div>
+                </div>
+                <!-- Extra Placeholders -->
+                <div class="cert-card centered-layout">
+                    <div class="cert-icon blue"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="cert-info">
+                        <h3>Security+</h3>
+                        <p>CompTIA Security+</p>
+                        <span class="cert-id">ID: COMP00112233</span>
+                    </div>
+                </div>
+                <div class="cert-card centered-layout">
+                    <div class="cert-icon blue"><i class="fa-brands fa-linux"></i></div>
+                    <div class="cert-info">
+                        <h3>RHCSA</h3>
+                        <p>Red Hat Certified System Administrator</p>
+                        <span class="cert-id">ID: 150-123-456</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SADHIN DATTA. Built for Enterprise.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
